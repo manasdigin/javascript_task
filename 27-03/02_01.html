@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>name:</label><input type="text" id="name" placeholder="fname"/> <br><br>
+    <label>phone_no:</label><input type="text" id="p.num" placeholder="num"/><br><br>
+    <label>email:</label><input type="text" id="mail" placeholder="type email"/><br><br>
+    <label>DOB</label><input type="date" id="dob" placeholder="dob"/><br><br>
+    <label>DEGREE:</label><input type="text" id="degree" placeholder="deg"/><br><br>
+    <label>tamil</label><input type="radio"  name="language" value="html"/>
+    <label>english</label><input type="radio" name="language" value="html"/>
+    <button onclick="button()">yy</button>
+</body>
+<script> 
+function button(){
+let input1=document.getElementById("name").value;
+let input2=document.getElementById("p.num").value;
+let input3=document.getElementById("mail").value;
+let input4=document.getElementById("dob").value;
+let input5=document.getElementById("degree").value;
+let input6=document.getElementByname("language").value
+let newObj={name:input1,
+            phoneno:input2,
+            email:input3,
+            dob:input4,
+            degree:input5,
+            language:input6,
+};
+array.push(newObj)
+console.log(array);
+}
+</script>
+</html>
